@@ -1,0 +1,26 @@
+﻿
+
+@page "/vehicules"
+
+<PageTitle>Gestion des véhicules</PageTitle>
+
+<h1>Gestion des véhicules</h1>
+
+
+compteur: @Count
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+
+
+
+
+@code {
+	private int Count { get; set; }
+
+	private void IncrementCount()
+	{
+
+		Count++;
+	}
+}
